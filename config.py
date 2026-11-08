@@ -19,7 +19,7 @@ AI_THRESHOLD = 0.78
 SIGNAL_DISAGREEMENT_LIMIT = 0.42
 
 # Unit 8 functionality is deliberately off until the next unit.
-RATE_LIMITING_ENABLED = os.getenv('AI201_RATE_LIMITS', '0') == '1'
+RATE_LIMITING_ENABLED = os.getenv('AI201_RATE_LIMITS', '1') == '1'
 RATE_LIMIT_PER_MINUTE = 10
 RATE_LIMIT_PER_DAY = 200
 RATE_LIMIT_STORAGE = 'memory://'

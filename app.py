@@ -43,7 +43,7 @@ if config.RATE_LIMITING_ENABLED:
         payload = request.get_json(silent=True)
         payload = payload if isinstance(payload, dict) else {}
         audit.log_rejection(creator_id=str(payload.get('creator_id', 'unknown')),
-                            reason='rate_limited')
+                            reason='rate_limited', limit=str(exc.description))
         return jsonify(error='rate_limited', message='Try again later.'), 429
 
 
