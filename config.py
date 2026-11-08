@@ -1,4 +1,4 @@
-"""Provenance Guard settings. Defaults only expose service on localhost."""
+﻿"""Provenance Guard settings. Defaults only expose service on localhost."""
 import os
 from pathlib import Path
 
@@ -14,7 +14,7 @@ DETECTOR_MAX_TOKENS = 400
 # Unit 7: favor not falsely accusing a real writer.
 WEIGHT_MODEL_SIGNAL = 0.60
 WEIGHT_STYLE_SIGNAL = 0.40
-HUMAN_THRESHOLD = 0.30
+HUMAN_THRESHOLD = 0.15
 AI_THRESHOLD = 0.78
 SIGNAL_DISAGREEMENT_LIMIT = 0.42
 
@@ -31,3 +31,4 @@ RESULTS_DIR = ROOT / 'results'
 MAX_TEXT_CHARS = 20000
 MAX_CREATOR_CHARS = 100
 MAX_REASONING_CHARS = 4000
+
