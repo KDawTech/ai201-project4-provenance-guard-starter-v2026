@@ -1,0 +1,2259 @@
+{
+  "label": "after",
+  "started_at": "2026-11-08T20:07:52.608124+00:00",
+  "base_url": "http://127.0.0.1:5000",
+  "targets": {
+    "1": "At most 1/10 human samples classified ai per trial",
+    "2": "AI median minus human median >= 0.12 per trial",
+    "3": "Direct label checks at 0.15, 0.55, 0.95 yield human, unsure, ai (3/3)",
+    "4": "5/5 appeals become under_review, original verdict and scores unchanged",
+    "5": "5/5 malformed requests return 4xx with no attribution decision"
+  },
+  "results": {
+    "1": [
+      {
+        "met": true,
+        "value": "0/10 AI flags",
+        "detail": [
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2289,
+              "content_id": "c43ab6063355",
+              "creator_id": "eval8_human_5d2a6a5e_1",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0482,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_1"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2116,
+              "content_id": "3d9b86ed9e57",
+              "creator_id": "eval8_human_5d2a6a5e_2",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0193,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_2"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2118,
+              "content_id": "47afd9dcd05f",
+              "creator_id": "eval8_human_5d2a6a5e_3",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0196,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_3"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2083,
+              "content_id": "63c3641602c1",
+              "creator_id": "eval8_human_5d2a6a5e_4",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0139,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_4"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2369,
+              "content_id": "86047ae0349b",
+              "creator_id": "eval8_human_5d2a6a5e_5",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0615,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_5"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2042,
+              "content_id": "27876a534569",
+              "creator_id": "eval8_human_5d2a6a5e_6",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.007,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_6"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2067,
+              "content_id": "ee5643de7cfa",
+              "creator_id": "eval8_human_5d2a6a5e_7",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0111,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_7"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2449,
+              "content_id": "5379397ffd30",
+              "creator_id": "eval8_human_5d2a6a5e_8",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0749,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_8"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2043,
+              "content_id": "bd7efe96444f",
+              "creator_id": "eval8_human_5d2a6a5e_9",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0071,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_9"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2008,
+              "content_id": "f1b78b061224",
+              "creator_id": "eval8_human_5d2a6a5e_10",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0014,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_10"
+          }
+        ],
+        "note": "A failed HTTP response also counts as a miss."
+      },
+      {
+        "met": true,
+        "value": "0/10 AI flags",
+        "detail": [
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2289,
+              "content_id": "e70817d02b6e",
+              "creator_id": "eval8_human_2f907821_1",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0482,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_1"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2116,
+              "content_id": "728f2f8136ab",
+              "creator_id": "eval8_human_2f907821_2",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0193,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_2"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2118,
+              "content_id": "89751409fbbd",
+              "creator_id": "eval8_human_2f907821_3",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0196,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_3"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2083,
+              "content_id": "d0674a0b0465",
+              "creator_id": "eval8_human_2f907821_4",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0139,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_4"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2369,
+              "content_id": "1cda55649f94",
+              "creator_id": "eval8_human_2f907821_5",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0615,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_5"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2042,
+              "content_id": "5fd8a7f46f0b",
+              "creator_id": "eval8_human_2f907821_6",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.007,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_6"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2067,
+              "content_id": "8c224ad347d5",
+              "creator_id": "eval8_human_2f907821_7",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0111,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_7"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2449,
+              "content_id": "b0aecc6aa873",
+              "creator_id": "eval8_human_2f907821_8",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0749,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_8"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2043,
+              "content_id": "e359bab926ec",
+              "creator_id": "eval8_human_2f907821_9",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0071,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_9"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2008,
+              "content_id": "0be585592123",
+              "creator_id": "eval8_human_2f907821_10",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0014,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_10"
+          }
+        ],
+        "note": "A failed HTTP response also counts as a miss."
+      },
+      {
+        "met": true,
+        "value": "0/10 AI flags",
+        "detail": [
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2289,
+              "content_id": "7849681d9d42",
+              "creator_id": "eval8_human_68b9e2f6_1",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0482,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_1"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2116,
+              "content_id": "6535eae4b94e",
+              "creator_id": "eval8_human_68b9e2f6_2",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0193,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_2"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2118,
+              "content_id": "a6b089e183db",
+              "creator_id": "eval8_human_68b9e2f6_3",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0196,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_3"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2083,
+              "content_id": "f6bdea8978a8",
+              "creator_id": "eval8_human_68b9e2f6_4",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0139,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_4"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2369,
+              "content_id": "01bd2a502ebc",
+              "creator_id": "eval8_human_68b9e2f6_5",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0615,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_5"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2042,
+              "content_id": "9e535a5ca91b",
+              "creator_id": "eval8_human_68b9e2f6_6",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.007,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_6"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2067,
+              "content_id": "7dec1a8adf40",
+              "creator_id": "eval8_human_68b9e2f6_7",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0111,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_7"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2449,
+              "content_id": "0ddba7dbbfe6",
+              "creator_id": "eval8_human_68b9e2f6_8",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0749,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_8"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2043,
+              "content_id": "7f88ba52f72f",
+              "creator_id": "eval8_human_68b9e2f6_9",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0071,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_9"
+          },
+          {
+            "status": 200,
+            "json": {
+              "confidence": 0.2008,
+              "content_id": "98f9905f9257",
+              "creator_id": "eval8_human_68b9e2f6_10",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0014,
+              "status": "decided",
+              "style_score": 0.5
+            },
+            "sample": "human_10"
+          }
+        ],
+        "note": "A failed HTTP response also counts as a miss."
+      }
+    ],
+    "2": [
+      {
+        "met": true,
+        "value": "AI median 0.5448 - human median 0.2118 = +0.3330",
+        "gap": 0.333,
+        "detail": {
+          "human": [
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.2289,
+                "content_id": "841c2803aaee",
+                "creator_id": "eval8_separation_h_5d2a6a5e_1",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0482,
+                "status": "decided",
+                "style_score": 0.5
+              },
+              "sample": "separation_h_1"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.2116,
+                "content_id": "c58e740b15eb",
+                "creator_id": "eval8_separation_h_5d2a6a5e_2",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0193,
+                "status": "decided",
+                "style_score": 0.5
+              },
+              "sample": "separation_h_2"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.2118,
+                "content_id": "a7b755b5c0e6",
+                "creator_id": "eval8_separation_h_5d2a6a5e_3",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0196,
+                "status": "decided",
+                "style_score": 0.5
+              },
+              "sample": "separation_h_3"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.2083,
+                "content_id": "29364910d95d",
+                "creator_id": "eval8_separation_h_5d2a6a5e_4",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0139,
+                "status": "decided",
+                "style_score": 0.5
+              },
+              "sample": "separation_h_4"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.2369,
+                "content_id": "41bce72a7119",
+                "creator_id": "eval8_separation_h_5d2a6a5e_5",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0615,
+                "status": "decided",
+                "style_score": 0.5
+              },
+              "sample": "separation_h_5"
+            }
+          ],
+          "ai": [
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.5023,
+                "content_id": "79abc19acd2f",
+                "creator_id": "eval8_separation_ai_5d2a6a5e_1",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.4905,
+                "status": "decided",
+                "style_score": 0.52
+              },
+              "sample": "separation_ai_1"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.5448,
+                "content_id": "0b6f358da016",
+                "creator_id": "eval8_separation_ai_5d2a6a5e_2",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.6312,
+                "status": "decided",
+                "style_score": 0.4151
+              },
+              "sample": "separation_ai_2"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.47,
+                "content_id": "19cc033bd69b",
+                "creator_id": "eval8_separation_ai_5d2a6a5e_3",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.4814,
+                "status": "decided",
+                "style_score": 0.453
+              },
+              "sample": "separation_ai_3"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.5782,
+                "content_id": "206794856670",
+                "creator_id": "eval8_separation_ai_5d2a6a5e_4",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.5821,
+                "status": "decided",
+                "style_score": 0.5724
+              },
+              "sample": "separation_ai_4"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.5706,
+                "content_id": "dde3e594af17",
+                "creator_id": "eval8_separation_ai_5d2a6a5e_5",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.6794,
+                "status": "decided",
+                "style_score": 0.4073
+              },
+              "sample": "separation_ai_5"
+            }
+          ]
+        }
+      },
+      {
+        "met": true,
+        "value": "AI median 0.5448 - human median 0.2118 = +0.3330",
+        "gap": 0.333,
+        "detail": {
+          "human": [
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.2289,
+                "content_id": "a422c1a5dd25",
+                "creator_id": "eval8_separation_h_2f907821_1",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0482,
+                "status": "decided",
+                "style_score": 0.5
+              },
+              "sample": "separation_h_1"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.2116,
+                "content_id": "35047b39e853",
+                "creator_id": "eval8_separation_h_2f907821_2",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0193,
+                "status": "decided",
+                "style_score": 0.5
+              },
+              "sample": "separation_h_2"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.2118,
+                "content_id": "b215e60761da",
+                "creator_id": "eval8_separation_h_2f907821_3",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0196,
+                "status": "decided",
+                "style_score": 0.5
+              },
+              "sample": "separation_h_3"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.2083,
+                "content_id": "0f4ed95259ff",
+                "creator_id": "eval8_separation_h_2f907821_4",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0139,
+                "status": "decided",
+                "style_score": 0.5
+              },
+              "sample": "separation_h_4"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.2369,
+                "content_id": "e09e5a07f200",
+                "creator_id": "eval8_separation_h_2f907821_5",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0615,
+                "status": "decided",
+                "style_score": 0.5
+              },
+              "sample": "separation_h_5"
+            }
+          ],
+          "ai": [
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.5023,
+                "content_id": "7e5ef3d82c8e",
+                "creator_id": "eval8_separation_ai_2f907821_1",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.4905,
+                "status": "decided",
+                "style_score": 0.52
+              },
+              "sample": "separation_ai_1"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.5448,
+                "content_id": "bb0d76a257c2",
+                "creator_id": "eval8_separation_ai_2f907821_2",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.6312,
+                "status": "decided",
+                "style_score": 0.4151
+              },
+              "sample": "separation_ai_2"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.47,
+                "content_id": "c21f6280fc7a",
+                "creator_id": "eval8_separation_ai_2f907821_3",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.4814,
+                "status": "decided",
+                "style_score": 0.453
+              },
+              "sample": "separation_ai_3"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.5782,
+                "content_id": "311bc41990c8",
+                "creator_id": "eval8_separation_ai_2f907821_4",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.5821,
+                "status": "decided",
+                "style_score": 0.5724
+              },
+              "sample": "separation_ai_4"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.5706,
+                "content_id": "c0a34c229958",
+                "creator_id": "eval8_separation_ai_2f907821_5",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.6794,
+                "status": "decided",
+                "style_score": 0.4073
+              },
+              "sample": "separation_ai_5"
+            }
+          ]
+        }
+      },
+      {
+        "met": true,
+        "value": "AI median 0.5448 - human median 0.2118 = +0.3330",
+        "gap": 0.333,
+        "detail": {
+          "human": [
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.2289,
+                "content_id": "0152a9d4990b",
+                "creator_id": "eval8_separation_h_68b9e2f6_1",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0482,
+                "status": "decided",
+                "style_score": 0.5
+              },
+              "sample": "separation_h_1"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.2116,
+                "content_id": "4c53e7619010",
+                "creator_id": "eval8_separation_h_68b9e2f6_2",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0193,
+                "status": "decided",
+                "style_score": 0.5
+              },
+              "sample": "separation_h_2"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.2118,
+                "content_id": "42f3250b8fe1",
+                "creator_id": "eval8_separation_h_68b9e2f6_3",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0196,
+                "status": "decided",
+                "style_score": 0.5
+              },
+              "sample": "separation_h_3"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.2083,
+                "content_id": "080c417fcb92",
+                "creator_id": "eval8_separation_h_68b9e2f6_4",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0139,
+                "status": "decided",
+                "style_score": 0.5
+              },
+              "sample": "separation_h_4"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.2369,
+                "content_id": "e0644dfeec7d",
+                "creator_id": "eval8_separation_h_68b9e2f6_5",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0615,
+                "status": "decided",
+                "style_score": 0.5
+              },
+              "sample": "separation_h_5"
+            }
+          ],
+          "ai": [
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.5023,
+                "content_id": "8325527a4723",
+                "creator_id": "eval8_separation_ai_68b9e2f6_1",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.4905,
+                "status": "decided",
+                "style_score": 0.52
+              },
+              "sample": "separation_ai_1"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.5448,
+                "content_id": "a9e9b7072088",
+                "creator_id": "eval8_separation_ai_68b9e2f6_2",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.6312,
+                "status": "decided",
+                "style_score": 0.4151
+              },
+              "sample": "separation_ai_2"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.47,
+                "content_id": "0017b303fb4c",
+                "creator_id": "eval8_separation_ai_68b9e2f6_3",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.4814,
+                "status": "decided",
+                "style_score": 0.453
+              },
+              "sample": "separation_ai_3"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.5782,
+                "content_id": "f9c89d9fde9a",
+                "creator_id": "eval8_separation_ai_68b9e2f6_4",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.5821,
+                "status": "decided",
+                "style_score": 0.5724
+              },
+              "sample": "separation_ai_4"
+            },
+            {
+              "status": 200,
+              "json": {
+                "confidence": 0.5706,
+                "content_id": "7173355e04ef",
+                "creator_id": "eval8_separation_ai_68b9e2f6_5",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.6794,
+                "status": "decided",
+                "style_score": 0.4073
+              },
+              "sample": "separation_ai_5"
+            }
+          ]
+        }
+      }
+    ],
+    "3": [
+      {
+        "met": true,
+        "value": "3/3 labels",
+        "detail": [
+          {
+            "score": 0.15,
+            "guess": "human",
+            "label": "This writing appears likely to be human-written based on limited automated signals. This is not proof of authorship."
+          },
+          {
+            "score": 0.55,
+            "guess": "unsure",
+            "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made."
+          },
+          {
+            "score": 0.95,
+            "guess": "ai",
+            "label": "This writing shows signals sometimes associated with AI-generated text. Automated judgments can be wrong. The writer can appeal this assessment."
+          }
+        ],
+        "note": "Direct function checks measure label mapping, not model accuracy."
+      },
+      {
+        "met": true,
+        "value": "3/3 labels",
+        "detail": [
+          {
+            "score": 0.15,
+            "guess": "human",
+            "label": "This writing appears likely to be human-written based on limited automated signals. This is not proof of authorship."
+          },
+          {
+            "score": 0.55,
+            "guess": "unsure",
+            "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made."
+          },
+          {
+            "score": 0.95,
+            "guess": "ai",
+            "label": "This writing shows signals sometimes associated with AI-generated text. Automated judgments can be wrong. The writer can appeal this assessment."
+          }
+        ],
+        "note": "Direct function checks measure label mapping, not model accuracy."
+      },
+      {
+        "met": true,
+        "value": "3/3 labels",
+        "detail": [
+          {
+            "score": 0.15,
+            "guess": "human",
+            "label": "This writing appears likely to be human-written based on limited automated signals. This is not proof of authorship."
+          },
+          {
+            "score": 0.55,
+            "guess": "unsure",
+            "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made."
+          },
+          {
+            "score": 0.95,
+            "guess": "ai",
+            "label": "This writing shows signals sometimes associated with AI-generated text. Automated judgments can be wrong. The writer can appeal this assessment."
+          }
+        ],
+        "note": "Direct function checks measure label mapping, not model accuracy."
+      }
+    ],
+    "4": [
+      {
+        "met": true,
+        "value": "5/5 preserved appeal flows",
+        "detail": [
+          {
+            "i": 1,
+            "content_id": "42bcd06fb143",
+            "passed": true,
+            "submit": {
+              "status": 200,
+              "json": {
+                "confidence": 0.2289,
+                "content_id": "42bcd06fb143",
+                "creator_id": "eval8_appeal_5d2a6a5e_1",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0482,
+                "status": "decided",
+                "style_score": 0.5
+              }
+            },
+            "appeal": {
+              "status": 200,
+              "json": {
+                "content_id": "42bcd06fb143",
+                "message": "Your appeal has been recorded for human review.",
+                "status": "under_review"
+              }
+            },
+            "status_response": {
+              "confidence": 0.2289,
+              "content_id": "42bcd06fb143",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0482,
+              "status": "under_review",
+              "style_score": 0.5
+            },
+            "original_decision": {
+              "combined_score": 0.2289,
+              "content_id": "42bcd06fb143",
+              "creator_id": "eval8_appeal_5d2a6a5e_1",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0482,
+              "status": "decided",
+              "style_score": 0.5,
+              "timestamp": "2026-11-08T20:07:56+00:00"
+            },
+            "appeal_event": {
+              "combined_score": null,
+              "content_id": "42bcd06fb143",
+              "creator_id": "eval8_appeal_5d2a6a5e_1",
+              "event": "appeal",
+              "guess": null,
+              "label": null,
+              "model_score": null,
+              "reasoning": "I wrote this personally and I request a human review of the detection score.",
+              "status": "under_review",
+              "style_score": null,
+              "timestamp": "2026-11-08T20:07:56+00:00"
+            },
+            "original_fields_unchanged": true
+          },
+          {
+            "i": 2,
+            "content_id": "7acd6aa6d8aa",
+            "passed": true,
+            "submit": {
+              "status": 200,
+              "json": {
+                "confidence": 0.2116,
+                "content_id": "7acd6aa6d8aa",
+                "creator_id": "eval8_appeal_5d2a6a5e_2",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0193,
+                "status": "decided",
+                "style_score": 0.5
+              }
+            },
+            "appeal": {
+              "status": 200,
+              "json": {
+                "content_id": "7acd6aa6d8aa",
+                "message": "Your appeal has been recorded for human review.",
+                "status": "under_review"
+              }
+            },
+            "status_response": {
+              "confidence": 0.2116,
+              "content_id": "7acd6aa6d8aa",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0193,
+              "status": "under_review",
+              "style_score": 0.5
+            },
+            "original_decision": {
+              "combined_score": 0.2116,
+              "content_id": "7acd6aa6d8aa",
+              "creator_id": "eval8_appeal_5d2a6a5e_2",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0193,
+              "status": "decided",
+              "style_score": 0.5,
+              "timestamp": "2026-11-08T20:07:57+00:00"
+            },
+            "appeal_event": {
+              "combined_score": null,
+              "content_id": "7acd6aa6d8aa",
+              "creator_id": "eval8_appeal_5d2a6a5e_2",
+              "event": "appeal",
+              "guess": null,
+              "label": null,
+              "model_score": null,
+              "reasoning": "I wrote this personally and I request a human review of the detection score.",
+              "status": "under_review",
+              "style_score": null,
+              "timestamp": "2026-11-08T20:07:57+00:00"
+            },
+            "original_fields_unchanged": true
+          },
+          {
+            "i": 3,
+            "content_id": "b24a0a4d2343",
+            "passed": true,
+            "submit": {
+              "status": 200,
+              "json": {
+                "confidence": 0.2118,
+                "content_id": "b24a0a4d2343",
+                "creator_id": "eval8_appeal_5d2a6a5e_3",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0196,
+                "status": "decided",
+                "style_score": 0.5
+              }
+            },
+            "appeal": {
+              "status": 200,
+              "json": {
+                "content_id": "b24a0a4d2343",
+                "message": "Your appeal has been recorded for human review.",
+                "status": "under_review"
+              }
+            },
+            "status_response": {
+              "confidence": 0.2118,
+              "content_id": "b24a0a4d2343",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0196,
+              "status": "under_review",
+              "style_score": 0.5
+            },
+            "original_decision": {
+              "combined_score": 0.2118,
+              "content_id": "b24a0a4d2343",
+              "creator_id": "eval8_appeal_5d2a6a5e_3",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0196,
+              "status": "decided",
+              "style_score": 0.5,
+              "timestamp": "2026-11-08T20:07:57+00:00"
+            },
+            "appeal_event": {
+              "combined_score": null,
+              "content_id": "b24a0a4d2343",
+              "creator_id": "eval8_appeal_5d2a6a5e_3",
+              "event": "appeal",
+              "guess": null,
+              "label": null,
+              "model_score": null,
+              "reasoning": "I wrote this personally and I request a human review of the detection score.",
+              "status": "under_review",
+              "style_score": null,
+              "timestamp": "2026-11-08T20:07:57+00:00"
+            },
+            "original_fields_unchanged": true
+          },
+          {
+            "i": 4,
+            "content_id": "80f666b84fbd",
+            "passed": true,
+            "submit": {
+              "status": 200,
+              "json": {
+                "confidence": 0.2083,
+                "content_id": "80f666b84fbd",
+                "creator_id": "eval8_appeal_5d2a6a5e_4",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0139,
+                "status": "decided",
+                "style_score": 0.5
+              }
+            },
+            "appeal": {
+              "status": 200,
+              "json": {
+                "content_id": "80f666b84fbd",
+                "message": "Your appeal has been recorded for human review.",
+                "status": "under_review"
+              }
+            },
+            "status_response": {
+              "confidence": 0.2083,
+              "content_id": "80f666b84fbd",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0139,
+              "status": "under_review",
+              "style_score": 0.5
+            },
+            "original_decision": {
+              "combined_score": 0.2083,
+              "content_id": "80f666b84fbd",
+              "creator_id": "eval8_appeal_5d2a6a5e_4",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0139,
+              "status": "decided",
+              "style_score": 0.5,
+              "timestamp": "2026-11-08T20:07:57+00:00"
+            },
+            "appeal_event": {
+              "combined_score": null,
+              "content_id": "80f666b84fbd",
+              "creator_id": "eval8_appeal_5d2a6a5e_4",
+              "event": "appeal",
+              "guess": null,
+              "label": null,
+              "model_score": null,
+              "reasoning": "I wrote this personally and I request a human review of the detection score.",
+              "status": "under_review",
+              "style_score": null,
+              "timestamp": "2026-11-08T20:07:57+00:00"
+            },
+            "original_fields_unchanged": true
+          },
+          {
+            "i": 5,
+            "content_id": "13869edeea99",
+            "passed": true,
+            "submit": {
+              "status": 200,
+              "json": {
+                "confidence": 0.2369,
+                "content_id": "13869edeea99",
+                "creator_id": "eval8_appeal_5d2a6a5e_5",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0615,
+                "status": "decided",
+                "style_score": 0.5
+              }
+            },
+            "appeal": {
+              "status": 200,
+              "json": {
+                "content_id": "13869edeea99",
+                "message": "Your appeal has been recorded for human review.",
+                "status": "under_review"
+              }
+            },
+            "status_response": {
+              "confidence": 0.2369,
+              "content_id": "13869edeea99",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0615,
+              "status": "under_review",
+              "style_score": 0.5
+            },
+            "original_decision": {
+              "combined_score": 0.2369,
+              "content_id": "13869edeea99",
+              "creator_id": "eval8_appeal_5d2a6a5e_5",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0615,
+              "status": "decided",
+              "style_score": 0.5,
+              "timestamp": "2026-11-08T20:07:57+00:00"
+            },
+            "appeal_event": {
+              "combined_score": null,
+              "content_id": "13869edeea99",
+              "creator_id": "eval8_appeal_5d2a6a5e_5",
+              "event": "appeal",
+              "guess": null,
+              "label": null,
+              "model_score": null,
+              "reasoning": "I wrote this personally and I request a human review of the detection score.",
+              "status": "under_review",
+              "style_score": null,
+              "timestamp": "2026-11-08T20:07:57+00:00"
+            },
+            "original_fields_unchanged": true
+          }
+        ]
+      },
+      {
+        "met": true,
+        "value": "5/5 preserved appeal flows",
+        "detail": [
+          {
+            "i": 1,
+            "content_id": "a69d17cfc33a",
+            "passed": true,
+            "submit": {
+              "status": 200,
+              "json": {
+                "confidence": 0.2289,
+                "content_id": "a69d17cfc33a",
+                "creator_id": "eval8_appeal_2f907821_1",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0482,
+                "status": "decided",
+                "style_score": 0.5
+              }
+            },
+            "appeal": {
+              "status": 200,
+              "json": {
+                "content_id": "a69d17cfc33a",
+                "message": "Your appeal has been recorded for human review.",
+                "status": "under_review"
+              }
+            },
+            "status_response": {
+              "confidence": 0.2289,
+              "content_id": "a69d17cfc33a",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0482,
+              "status": "under_review",
+              "style_score": 0.5
+            },
+            "original_decision": {
+              "combined_score": 0.2289,
+              "content_id": "a69d17cfc33a",
+              "creator_id": "eval8_appeal_2f907821_1",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0482,
+              "status": "decided",
+              "style_score": 0.5,
+              "timestamp": "2026-11-08T20:08:02+00:00"
+            },
+            "appeal_event": {
+              "combined_score": null,
+              "content_id": "a69d17cfc33a",
+              "creator_id": "eval8_appeal_2f907821_1",
+              "event": "appeal",
+              "guess": null,
+              "label": null,
+              "model_score": null,
+              "reasoning": "I wrote this personally and I request a human review of the detection score.",
+              "status": "under_review",
+              "style_score": null,
+              "timestamp": "2026-11-08T20:08:02+00:00"
+            },
+            "original_fields_unchanged": true
+          },
+          {
+            "i": 2,
+            "content_id": "3b820f368375",
+            "passed": true,
+            "submit": {
+              "status": 200,
+              "json": {
+                "confidence": 0.2116,
+                "content_id": "3b820f368375",
+                "creator_id": "eval8_appeal_2f907821_2",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0193,
+                "status": "decided",
+                "style_score": 0.5
+              }
+            },
+            "appeal": {
+              "status": 200,
+              "json": {
+                "content_id": "3b820f368375",
+                "message": "Your appeal has been recorded for human review.",
+                "status": "under_review"
+              }
+            },
+            "status_response": {
+              "confidence": 0.2116,
+              "content_id": "3b820f368375",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0193,
+              "status": "under_review",
+              "style_score": 0.5
+            },
+            "original_decision": {
+              "combined_score": 0.2116,
+              "content_id": "3b820f368375",
+              "creator_id": "eval8_appeal_2f907821_2",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0193,
+              "status": "decided",
+              "style_score": 0.5,
+              "timestamp": "2026-11-08T20:08:02+00:00"
+            },
+            "appeal_event": {
+              "combined_score": null,
+              "content_id": "3b820f368375",
+              "creator_id": "eval8_appeal_2f907821_2",
+              "event": "appeal",
+              "guess": null,
+              "label": null,
+              "model_score": null,
+              "reasoning": "I wrote this personally and I request a human review of the detection score.",
+              "status": "under_review",
+              "style_score": null,
+              "timestamp": "2026-11-08T20:08:02+00:00"
+            },
+            "original_fields_unchanged": true
+          },
+          {
+            "i": 3,
+            "content_id": "b78ed8510e54",
+            "passed": true,
+            "submit": {
+              "status": 200,
+              "json": {
+                "confidence": 0.2118,
+                "content_id": "b78ed8510e54",
+                "creator_id": "eval8_appeal_2f907821_3",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0196,
+                "status": "decided",
+                "style_score": 0.5
+              }
+            },
+            "appeal": {
+              "status": 200,
+              "json": {
+                "content_id": "b78ed8510e54",
+                "message": "Your appeal has been recorded for human review.",
+                "status": "under_review"
+              }
+            },
+            "status_response": {
+              "confidence": 0.2118,
+              "content_id": "b78ed8510e54",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0196,
+              "status": "under_review",
+              "style_score": 0.5
+            },
+            "original_decision": {
+              "combined_score": 0.2118,
+              "content_id": "b78ed8510e54",
+              "creator_id": "eval8_appeal_2f907821_3",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0196,
+              "status": "decided",
+              "style_score": 0.5,
+              "timestamp": "2026-11-08T20:08:03+00:00"
+            },
+            "appeal_event": {
+              "combined_score": null,
+              "content_id": "b78ed8510e54",
+              "creator_id": "eval8_appeal_2f907821_3",
+              "event": "appeal",
+              "guess": null,
+              "label": null,
+              "model_score": null,
+              "reasoning": "I wrote this personally and I request a human review of the detection score.",
+              "status": "under_review",
+              "style_score": null,
+              "timestamp": "2026-11-08T20:08:03+00:00"
+            },
+            "original_fields_unchanged": true
+          },
+          {
+            "i": 4,
+            "content_id": "26c2a89902ee",
+            "passed": true,
+            "submit": {
+              "status": 200,
+              "json": {
+                "confidence": 0.2083,
+                "content_id": "26c2a89902ee",
+                "creator_id": "eval8_appeal_2f907821_4",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0139,
+                "status": "decided",
+                "style_score": 0.5
+              }
+            },
+            "appeal": {
+              "status": 200,
+              "json": {
+                "content_id": "26c2a89902ee",
+                "message": "Your appeal has been recorded for human review.",
+                "status": "under_review"
+              }
+            },
+            "status_response": {
+              "confidence": 0.2083,
+              "content_id": "26c2a89902ee",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0139,
+              "status": "under_review",
+              "style_score": 0.5
+            },
+            "original_decision": {
+              "combined_score": 0.2083,
+              "content_id": "26c2a89902ee",
+              "creator_id": "eval8_appeal_2f907821_4",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0139,
+              "status": "decided",
+              "style_score": 0.5,
+              "timestamp": "2026-11-08T20:08:03+00:00"
+            },
+            "appeal_event": {
+              "combined_score": null,
+              "content_id": "26c2a89902ee",
+              "creator_id": "eval8_appeal_2f907821_4",
+              "event": "appeal",
+              "guess": null,
+              "label": null,
+              "model_score": null,
+              "reasoning": "I wrote this personally and I request a human review of the detection score.",
+              "status": "under_review",
+              "style_score": null,
+              "timestamp": "2026-11-08T20:08:03+00:00"
+            },
+            "original_fields_unchanged": true
+          },
+          {
+            "i": 5,
+            "content_id": "a99c83b5fc60",
+            "passed": true,
+            "submit": {
+              "status": 200,
+              "json": {
+                "confidence": 0.2369,
+                "content_id": "a99c83b5fc60",
+                "creator_id": "eval8_appeal_2f907821_5",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0615,
+                "status": "decided",
+                "style_score": 0.5
+              }
+            },
+            "appeal": {
+              "status": 200,
+              "json": {
+                "content_id": "a99c83b5fc60",
+                "message": "Your appeal has been recorded for human review.",
+                "status": "under_review"
+              }
+            },
+            "status_response": {
+              "confidence": 0.2369,
+              "content_id": "a99c83b5fc60",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0615,
+              "status": "under_review",
+              "style_score": 0.5
+            },
+            "original_decision": {
+              "combined_score": 0.2369,
+              "content_id": "a99c83b5fc60",
+              "creator_id": "eval8_appeal_2f907821_5",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0615,
+              "status": "decided",
+              "style_score": 0.5,
+              "timestamp": "2026-11-08T20:08:03+00:00"
+            },
+            "appeal_event": {
+              "combined_score": null,
+              "content_id": "a99c83b5fc60",
+              "creator_id": "eval8_appeal_2f907821_5",
+              "event": "appeal",
+              "guess": null,
+              "label": null,
+              "model_score": null,
+              "reasoning": "I wrote this personally and I request a human review of the detection score.",
+              "status": "under_review",
+              "style_score": null,
+              "timestamp": "2026-11-08T20:08:03+00:00"
+            },
+            "original_fields_unchanged": true
+          }
+        ]
+      },
+      {
+        "met": true,
+        "value": "5/5 preserved appeal flows",
+        "detail": [
+          {
+            "i": 1,
+            "content_id": "48cdaf2934fc",
+            "passed": true,
+            "submit": {
+              "status": 200,
+              "json": {
+                "confidence": 0.2289,
+                "content_id": "48cdaf2934fc",
+                "creator_id": "eval8_appeal_68b9e2f6_1",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0482,
+                "status": "decided",
+                "style_score": 0.5
+              }
+            },
+            "appeal": {
+              "status": 200,
+              "json": {
+                "content_id": "48cdaf2934fc",
+                "message": "Your appeal has been recorded for human review.",
+                "status": "under_review"
+              }
+            },
+            "status_response": {
+              "confidence": 0.2289,
+              "content_id": "48cdaf2934fc",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0482,
+              "status": "under_review",
+              "style_score": 0.5
+            },
+            "original_decision": {
+              "combined_score": 0.2289,
+              "content_id": "48cdaf2934fc",
+              "creator_id": "eval8_appeal_68b9e2f6_1",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0482,
+              "status": "decided",
+              "style_score": 0.5,
+              "timestamp": "2026-11-08T20:08:08+00:00"
+            },
+            "appeal_event": {
+              "combined_score": null,
+              "content_id": "48cdaf2934fc",
+              "creator_id": "eval8_appeal_68b9e2f6_1",
+              "event": "appeal",
+              "guess": null,
+              "label": null,
+              "model_score": null,
+              "reasoning": "I wrote this personally and I request a human review of the detection score.",
+              "status": "under_review",
+              "style_score": null,
+              "timestamp": "2026-11-08T20:08:08+00:00"
+            },
+            "original_fields_unchanged": true
+          },
+          {
+            "i": 2,
+            "content_id": "0d9eabb868a1",
+            "passed": true,
+            "submit": {
+              "status": 200,
+              "json": {
+                "confidence": 0.2116,
+                "content_id": "0d9eabb868a1",
+                "creator_id": "eval8_appeal_68b9e2f6_2",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0193,
+                "status": "decided",
+                "style_score": 0.5
+              }
+            },
+            "appeal": {
+              "status": 200,
+              "json": {
+                "content_id": "0d9eabb868a1",
+                "message": "Your appeal has been recorded for human review.",
+                "status": "under_review"
+              }
+            },
+            "status_response": {
+              "confidence": 0.2116,
+              "content_id": "0d9eabb868a1",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0193,
+              "status": "under_review",
+              "style_score": 0.5
+            },
+            "original_decision": {
+              "combined_score": 0.2116,
+              "content_id": "0d9eabb868a1",
+              "creator_id": "eval8_appeal_68b9e2f6_2",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0193,
+              "status": "decided",
+              "style_score": 0.5,
+              "timestamp": "2026-11-08T20:08:08+00:00"
+            },
+            "appeal_event": {
+              "combined_score": null,
+              "content_id": "0d9eabb868a1",
+              "creator_id": "eval8_appeal_68b9e2f6_2",
+              "event": "appeal",
+              "guess": null,
+              "label": null,
+              "model_score": null,
+              "reasoning": "I wrote this personally and I request a human review of the detection score.",
+              "status": "under_review",
+              "style_score": null,
+              "timestamp": "2026-11-08T20:08:08+00:00"
+            },
+            "original_fields_unchanged": true
+          },
+          {
+            "i": 3,
+            "content_id": "1231ec298bdd",
+            "passed": true,
+            "submit": {
+              "status": 200,
+              "json": {
+                "confidence": 0.2118,
+                "content_id": "1231ec298bdd",
+                "creator_id": "eval8_appeal_68b9e2f6_3",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0196,
+                "status": "decided",
+                "style_score": 0.5
+              }
+            },
+            "appeal": {
+              "status": 200,
+              "json": {
+                "content_id": "1231ec298bdd",
+                "message": "Your appeal has been recorded for human review.",
+                "status": "under_review"
+              }
+            },
+            "status_response": {
+              "confidence": 0.2118,
+              "content_id": "1231ec298bdd",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0196,
+              "status": "under_review",
+              "style_score": 0.5
+            },
+            "original_decision": {
+              "combined_score": 0.2118,
+              "content_id": "1231ec298bdd",
+              "creator_id": "eval8_appeal_68b9e2f6_3",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0196,
+              "status": "decided",
+              "style_score": 0.5,
+              "timestamp": "2026-11-08T20:08:08+00:00"
+            },
+            "appeal_event": {
+              "combined_score": null,
+              "content_id": "1231ec298bdd",
+              "creator_id": "eval8_appeal_68b9e2f6_3",
+              "event": "appeal",
+              "guess": null,
+              "label": null,
+              "model_score": null,
+              "reasoning": "I wrote this personally and I request a human review of the detection score.",
+              "status": "under_review",
+              "style_score": null,
+              "timestamp": "2026-11-08T20:08:08+00:00"
+            },
+            "original_fields_unchanged": true
+          },
+          {
+            "i": 4,
+            "content_id": "5c05f11120f3",
+            "passed": true,
+            "submit": {
+              "status": 200,
+              "json": {
+                "confidence": 0.2083,
+                "content_id": "5c05f11120f3",
+                "creator_id": "eval8_appeal_68b9e2f6_4",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0139,
+                "status": "decided",
+                "style_score": 0.5
+              }
+            },
+            "appeal": {
+              "status": 200,
+              "json": {
+                "content_id": "5c05f11120f3",
+                "message": "Your appeal has been recorded for human review.",
+                "status": "under_review"
+              }
+            },
+            "status_response": {
+              "confidence": 0.2083,
+              "content_id": "5c05f11120f3",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0139,
+              "status": "under_review",
+              "style_score": 0.5
+            },
+            "original_decision": {
+              "combined_score": 0.2083,
+              "content_id": "5c05f11120f3",
+              "creator_id": "eval8_appeal_68b9e2f6_4",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0139,
+              "status": "decided",
+              "style_score": 0.5,
+              "timestamp": "2026-11-08T20:08:08+00:00"
+            },
+            "appeal_event": {
+              "combined_score": null,
+              "content_id": "5c05f11120f3",
+              "creator_id": "eval8_appeal_68b9e2f6_4",
+              "event": "appeal",
+              "guess": null,
+              "label": null,
+              "model_score": null,
+              "reasoning": "I wrote this personally and I request a human review of the detection score.",
+              "status": "under_review",
+              "style_score": null,
+              "timestamp": "2026-11-08T20:08:08+00:00"
+            },
+            "original_fields_unchanged": true
+          },
+          {
+            "i": 5,
+            "content_id": "b42e767ab72e",
+            "passed": true,
+            "submit": {
+              "status": 200,
+              "json": {
+                "confidence": 0.2369,
+                "content_id": "b42e767ab72e",
+                "creator_id": "eval8_appeal_68b9e2f6_5",
+                "guess": "unsure",
+                "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+                "model_score": 0.0615,
+                "status": "decided",
+                "style_score": 0.5
+              }
+            },
+            "appeal": {
+              "status": 200,
+              "json": {
+                "content_id": "b42e767ab72e",
+                "message": "Your appeal has been recorded for human review.",
+                "status": "under_review"
+              }
+            },
+            "status_response": {
+              "confidence": 0.2369,
+              "content_id": "b42e767ab72e",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0615,
+              "status": "under_review",
+              "style_score": 0.5
+            },
+            "original_decision": {
+              "combined_score": 0.2369,
+              "content_id": "b42e767ab72e",
+              "creator_id": "eval8_appeal_68b9e2f6_5",
+              "guess": "unsure",
+              "label": "We cannot reliably determine who wrote this text from the available signals. No claim of AI authorship is being made.",
+              "model_score": 0.0615,
+              "status": "decided",
+              "style_score": 0.5,
+              "timestamp": "2026-11-08T20:08:08+00:00"
+            },
+            "appeal_event": {
+              "combined_score": null,
+              "content_id": "b42e767ab72e",
+              "creator_id": "eval8_appeal_68b9e2f6_5",
+              "event": "appeal",
+              "guess": null,
+              "label": null,
+              "model_score": null,
+              "reasoning": "I wrote this personally and I request a human review of the detection score.",
+              "status": "under_review",
+              "style_score": null,
+              "timestamp": "2026-11-08T20:08:08+00:00"
+            },
+            "original_fields_unchanged": true
+          }
+        ]
+      }
+    ],
+    "5": [
+      {
+        "met": true,
+        "value": "5/5 4xx; rejection audit: yes",
+        "detail": [
+          {
+            "case": 1,
+            "status": 400,
+            "response": {
+              "error": "invalid_text",
+              "message": "text must be a nonempty string."
+            },
+            "passed": true
+          },
+          {
+            "case": 2,
+            "status": 400,
+            "response": {
+              "error": "invalid_text",
+              "message": "text must be a nonempty string."
+            },
+            "passed": true
+          },
+          {
+            "case": 3,
+            "status": 400,
+            "response": {
+              "error": "invalid_text",
+              "message": "text must be a nonempty string."
+            },
+            "passed": true
+          },
+          {
+            "case": 4,
+            "status": 400,
+            "response": {
+              "error": "invalid_creator_id",
+              "message": "creator_id must be nonempty text."
+            },
+            "passed": true
+          },
+          {
+            "case": 5,
+            "status": 413,
+            "response": {
+              "error": "text_too_long",
+              "message": "text exceeds 20000 characters."
+            },
+            "passed": true
+          }
+        ],
+        "audit_rejections": [
+          {
+            "combined_score": null,
+            "content_id": null,
+            "creator_id": "eval8_invalid_5d2a6a5e_1",
+            "event": "rejected",
+            "guess": null,
+            "label": null,
+            "model_score": null,
+            "reason": "invalid_text",
+            "status": "rejected",
+            "style_score": null,
+            "timestamp": "2026-11-08T20:07:57+00:00"
+          },
+          {
+            "combined_score": null,
+            "content_id": null,
+            "creator_id": "eval8_invalid_5d2a6a5e_2",
+            "event": "rejected",
+            "guess": null,
+            "label": null,
+            "model_score": null,
+            "reason": "invalid_text",
+            "status": "rejected",
+            "style_score": null,
+            "timestamp": "2026-11-08T20:07:57+00:00"
+          },
+          {
+            "combined_score": null,
+            "content_id": null,
+            "creator_id": "eval8_invalid_5d2a6a5e_3",
+            "event": "rejected",
+            "guess": null,
+            "label": null,
+            "model_score": null,
+            "reason": "invalid_text",
+            "status": "rejected",
+            "style_score": null,
+            "timestamp": "2026-11-08T20:07:57+00:00"
+          },
+          {
+            "combined_score": null,
+            "content_id": null,
+            "creator_id": "unknown",
+            "event": "rejected",
+            "guess": null,
+            "label": null,
+            "model_score": null,
+            "reason": "invalid_creator_id",
+            "status": "rejected",
+            "style_score": null,
+            "timestamp": "2026-11-08T20:07:57+00:00"
+          },
+          {
+            "combined_score": null,
+            "content_id": null,
+            "creator_id": "eval8_invalid_5d2a6a5e_5",
+            "event": "rejected",
+            "guess": null,
+            "label": null,
+            "model_score": null,
+            "reason": "text_too_long",
+            "status": "rejected",
+            "style_score": null,
+            "timestamp": "2026-11-08T20:07:57+00:00"
+          }
+        ],
+        "note": "Last five log entries should be rejections; run with no concurrent writers."
+      },
+      {
+        "met": true,
+        "value": "5/5 4xx; rejection audit: yes",
+        "detail": [
+          {
+            "case": 1,
+            "status": 400,
+            "response": {
+              "error": "invalid_text",
+              "message": "text must be a nonempty string."
+            },
+            "passed": true
+          },
+          {
+            "case": 2,
+            "status": 400,
+            "response": {
+              "error": "invalid_text",
+              "message": "text must be a nonempty string."
+            },
+            "passed": true
+          },
+          {
+            "case": 3,
+            "status": 400,
+            "response": {
+              "error": "invalid_text",
+              "message": "text must be a nonempty string."
+            },
+            "passed": true
+          },
+          {
+            "case": 4,
+            "status": 400,
+            "response": {
+              "error": "invalid_creator_id",
+              "message": "creator_id must be nonempty text."
+            },
+            "passed": true
+          },
+          {
+            "case": 5,
+            "status": 413,
+            "response": {
+              "error": "text_too_long",
+              "message": "text exceeds 20000 characters."
+            },
+            "passed": true
+          }
+        ],
+        "audit_rejections": [
+          {
+            "combined_score": null,
+            "content_id": null,
+            "creator_id": "eval8_invalid_2f907821_1",
+            "event": "rejected",
+            "guess": null,
+            "label": null,
+            "model_score": null,
+            "reason": "invalid_text",
+            "status": "rejected",
+            "style_score": null,
+            "timestamp": "2026-11-08T20:08:03+00:00"
+          },
+          {
+            "combined_score": null,
+            "content_id": null,
+            "creator_id": "eval8_invalid_2f907821_2",
+            "event": "rejected",
+            "guess": null,
+            "label": null,
+            "model_score": null,
+            "reason": "invalid_text",
+            "status": "rejected",
+            "style_score": null,
+            "timestamp": "2026-11-08T20:08:03+00:00"
+          },
+          {
+            "combined_score": null,
+            "content_id": null,
+            "creator_id": "eval8_invalid_2f907821_3",
+            "event": "rejected",
+            "guess": null,
+            "label": null,
+            "model_score": null,
+            "reason": "invalid_text",
+            "status": "rejected",
+            "style_score": null,
+            "timestamp": "2026-11-08T20:08:03+00:00"
+          },
+          {
+            "combined_score": null,
+            "content_id": null,
+            "creator_id": "unknown",
+            "event": "rejected",
+            "guess": null,
+            "label": null,
+            "model_score": null,
+            "reason": "invalid_creator_id",
+            "status": "rejected",
+            "style_score": null,
+            "timestamp": "2026-11-08T20:08:03+00:00"
+          },
+          {
+            "combined_score": null,
+            "content_id": null,
+            "creator_id": "eval8_invalid_2f907821_5",
+            "event": "rejected",
+            "guess": null,
+            "label": null,
+            "model_score": null,
+            "reason": "text_too_long",
+            "status": "rejected",
+            "style_score": null,
+            "timestamp": "2026-11-08T20:08:03+00:00"
+          }
+        ],
+        "note": "Last five log entries should be rejections; run with no concurrent writers."
+      },
+      {
+        "met": true,
+        "value": "5/5 4xx; rejection audit: yes",
+        "detail": [
+          {
+            "case": 1,
+            "status": 400,
+            "response": {
+              "error": "invalid_text",
+              "message": "text must be a nonempty string."
+            },
+            "passed": true
+          },
+          {
+            "case": 2,
+            "status": 400,
+            "response": {
+              "error": "invalid_text",
+              "message": "text must be a nonempty string."
+            },
+            "passed": true
+          },
+          {
+            "case": 3,
+            "status": 400,
+            "response": {
+              "error": "invalid_text",
+              "message": "text must be a nonempty string."
+            },
+            "passed": true
+          },
+          {
+            "case": 4,
+            "status": 400,
+            "response": {
+              "error": "invalid_creator_id",
+              "message": "creator_id must be nonempty text."
+            },
+            "passed": true
+          },
+          {
+            "case": 5,
+            "status": 413,
+            "response": {
+              "error": "text_too_long",
+              "message": "text exceeds 20000 characters."
+            },
+            "passed": true
+          }
+        ],
+        "audit_rejections": [
+          {
+            "combined_score": null,
+            "content_id": null,
+            "creator_id": "eval8_invalid_68b9e2f6_1",
+            "event": "rejected",
+            "guess": null,
+            "label": null,
+            "model_score": null,
+            "reason": "invalid_text",
+            "status": "rejected",
+            "style_score": null,
+            "timestamp": "2026-11-08T20:08:09+00:00"
+          },
+          {
+            "combined_score": null,
+            "content_id": null,
+            "creator_id": "eval8_invalid_68b9e2f6_2",
+            "event": "rejected",
+            "guess": null,
+            "label": null,
+            "model_score": null,
+            "reason": "invalid_text",
+            "status": "rejected",
+            "style_score": null,
+            "timestamp": "2026-11-08T20:08:09+00:00"
+          },
+          {
+            "combined_score": null,
+            "content_id": null,
+            "creator_id": "eval8_invalid_68b9e2f6_3",
+            "event": "rejected",
+            "guess": null,
+            "label": null,
+            "model_score": null,
+            "reason": "invalid_text",
+            "status": "rejected",
+            "style_score": null,
+            "timestamp": "2026-11-08T20:08:09+00:00"
+          },
+          {
+            "combined_score": null,
+            "content_id": null,
+            "creator_id": "unknown",
+            "event": "rejected",
+            "guess": null,
+            "label": null,
+            "model_score": null,
+            "reason": "invalid_creator_id",
+            "status": "rejected",
+            "style_score": null,
+            "timestamp": "2026-11-08T20:08:09+00:00"
+          },
+          {
+            "combined_score": null,
+            "content_id": null,
+            "creator_id": "eval8_invalid_68b9e2f6_5",
+            "event": "rejected",
+            "guess": null,
+            "label": null,
+            "model_score": null,
+            "reason": "text_too_long",
+            "status": "rejected",
+            "style_score": null,
+            "timestamp": "2026-11-08T20:08:09+00:00"
+          }
+        ],
+        "note": "Last five log entries should be rejections; run with no concurrent writers."
+      }
+    ]
+  }
+}
